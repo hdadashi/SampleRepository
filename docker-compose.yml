@@ -1,0 +1,11 @@
+﻿services:
+  metro:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sample-repository-metro
+    ports:
+      - "8081:8081"
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
